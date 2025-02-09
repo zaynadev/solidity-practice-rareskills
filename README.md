@@ -1,66 +1,38 @@
-## Foundry
+# Syntax Quiz
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+The Solidity Syntax Quiz is a collection of problems that tests engineers on intermediate-level Solidity syntax. After teaching hundreds of Solidity engineers -- including professional ones -- we've seen that many tend to struggle to produce answers quickly to the kinds of problems in this quiz.
 
-Foundry consists of:
+By practicing these problems, you'll be more fluent in areas you might not have had much practice with in the past.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+None of these problems require any clever "tricks" to or "hacks" to solve. If you understand the underlying concept, these problems are straightforward.
 
-## Documentation
+Your goal should not just be to answer the questions, but to be able to answer them quickly. What is covered here is still essential solidity syntax, so you want fluency with it.
 
-https://book.getfoundry.sh/
+After you solve the problems, we suggest trying again a week later to test if you internalized the concepts and syntax.
 
-## Usage
+**Suggestion**: turn off your IDE's AI feature when using this repo.
 
-### Build
+## Suggested Problem Order
 
-```shell
-$ forge build
-```
+StringConcat.sol
+StringCompare.sol
+MemoryArray.sol
+Bytes.sol
+StringIndex.sol
+IsFirstBitSet.sol
+IsNBitSet.sol
+TryCatch.sol
+TryCatchReason.sol
+ReadStruct.sol
+LowLevel.sol
+LowLevelArgs1.sol
+LowLevelArgs2.sol
+LowLevelReturnUint.sol
+LowLevelReturnString.sol
+LowLevelStruct.sol
+Forwarder.sol
+SelfCall.sol
+StorageSet.sol
+MappingSet.sol
 
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Fill out the code and then test it with `forge test --match-contract <contract-name>`.
