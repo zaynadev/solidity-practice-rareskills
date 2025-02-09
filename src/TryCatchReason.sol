@@ -12,6 +12,11 @@ contract TryCatchReason {
         // if the call doesn't revert, return an empty string
         // if the call reverts, return the reason of the revert
         // you will need to create the interface yourself
-
-   }
+        try IRare(a).rare(x) {
+            bytes memory empty = new bytes(0);
+            return empty;
+        } catch Error(string memory reason) {
+            return abi.encodeWithSignature("Error(string)", reason);
+        }
+    }
 }
