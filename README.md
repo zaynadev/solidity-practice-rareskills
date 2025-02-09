@@ -14,25 +14,25 @@ After you solve the problems, we suggest trying again a week later to test if yo
 
 ## Suggested Problem Order
 
-StringConcat.sol
-StringCompare.sol
-MemoryArray.sol
-Bytes.sol
-StringIndex.sol
-IsFirstBitSet.sol
-IsNBitSet.sol
-TryCatch.sol
-TryCatchReason.sol
-ReadStruct.sol
-LowLevel.sol
-LowLevelArgs1.sol
-LowLevelArgs2.sol
-LowLevelReturnUint.sol
-LowLevelReturnString.sol
-LowLevelStruct.sol
-Forwarder.sol
-SelfCall.sol
-StorageSet.sol
-MappingSet.sol
+- StringConcat.sol
+- StringCompare.sol
+- MemoryArray.sol
+- Bytes.sol
+- StringIndex.sol
+- IsFirstBitSet.sol
+- IsNBitSet.sol
+- TryCatch.sol
+- TryCatchReason.sol
+- ReadStruct.sol
+- LowLevel.sol
+- LowLevelArgs1.sol
+- LowLevelArgs2.sol
+- LowLevelReturnUint.sol
+- LowLevelReturnString.sol
+- LowLevelStruct.sol
+- Forwarder.sol
+- SelfCall.sol
+- StorageSet.sol
+- MappingSet.sol
 
 Fill out the code and then test it with `forge test --match-contract <contract-name>`.
