@@ -7,5 +7,10 @@ contract IsNBitSet {
         // 000....0001 with n = 0 returns true
         // 000....0001 with n = 1 returns false
         // 000....0010 with n = 1 returns true
+        assembly {
+            let num := shr(n, x)
+            mstore(0x00, mod(num, 2))
+            return(0x00, 0x20)
+        }
     }
 }
