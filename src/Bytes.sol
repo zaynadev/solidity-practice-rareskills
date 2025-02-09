@@ -11,5 +11,19 @@ contract Bytes {
         // ...
         // etc
 
-   }
+        assembly {
+            mstore(0x00, 0x20)
+            mstore(0x20, z)
+            for { let i := 0 } lt(i, z) { i := add(i, 1) } { mstore8(add(i, 0x40), i) }
+            return(0x00, add(z, 0x40))
+        }
+
+        /*
+        bytes memory b = new bytes(z);
+        for (uint8 i; i < z; i++) {
+            b[i] = bytes1(i);
+        }
+        return b;
+        */
+    }
 }
