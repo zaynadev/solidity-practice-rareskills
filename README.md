@@ -33,5 +33,7 @@ After you solve the problems, we suggest trying again a week later to test if yo
 - SelfCall.sol
 - StorageSet.sol
 - MappingSet.sol
+- NoDelegateCall.sol
+- GetEther.sol
 
 Fill out the code and then test it with `forge test --match-contract <contract-name>`.
