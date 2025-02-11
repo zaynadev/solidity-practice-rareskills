@@ -21,12 +21,12 @@ contract BadToken {
 }
 
 contract TryCatchSimpleTest is Test {
-    TryCatch tryCatch;
+    TryCatchSimple tryCatch;
     GoodToken goodToken;
     BadToken badToken;
 
     function setUp() public {
-        tryCatch = new TryCatch();
+        tryCatch = new TryCatchSimple();
     }
 
     function test_TryCatch1() public {
