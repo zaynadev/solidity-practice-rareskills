@@ -1,4 +1,4 @@
-# Solidity Practice By RareSkills
+# Intermediate Solidity Quiz By RareSkills
 
 The Solidity Syntax Quiz is a collection of problems that tests engineers on intermediate-level Solidity syntax. After teaching hundreds of Solidity engineers -- including professional ones -- we've seen that many tend to struggle to produce answers quickly to the kinds of problems in this quiz.
 
@@ -8,7 +8,7 @@ Your goal should not just be to answer the questions, but to be able to answer t
 
 After you solve the problems, we suggest trying again a week later to test if you internalized the concepts and syntax.
 
-**Suggestion**: turn off your IDE's AI feature when using this repo.
+**Suggestion**: turn off your IDE's AI feature when using this repository.
 
 ## Suggested Problem Order
 

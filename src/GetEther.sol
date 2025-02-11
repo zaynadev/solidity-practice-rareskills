@@ -8,16 +8,16 @@ contract GetEther {
     // get the Ether from the HasEther contract. You may not modify the test
     
     function getEther(HasEther hasEther) external {
-        hasEther.action(address(this), abi.encodeWithSignature("selfTransfer()"));
+        //...
     }
-
-    receive() external payable {}
 }
 
 contract HasEther {
 
+    error NotEnoughEther();
+
     constructor() payable {
-        require(address(this).balance == 1 ether, "HasEther must be sent 1 ether");
+        require(address(this).balance == 1 ether, NotEnoughEther());
     }
 
     function action(address to, bytes memory data) external {
