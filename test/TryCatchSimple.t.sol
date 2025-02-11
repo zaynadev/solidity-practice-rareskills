@@ -2,7 +2,7 @@
 pragma solidity 0.8.28;
 
 import {Test} from "forge-std/Test.sol";
-import {TryCatch, IERC20} from "../src/TryCatch.sol";
+import {TryCatchSimple, IERC20} from "../src/TryCatchSimple.sol";
 
 contract GoodToken {
     string private __name;
@@ -20,7 +20,7 @@ contract BadToken {
     }
 }
 
-contract TryCatchTest is Test {
+contract TryCatchSimpleTest is Test {
     TryCatch tryCatch;
     GoodToken goodToken;
     BadToken badToken;

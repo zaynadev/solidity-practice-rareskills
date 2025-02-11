@@ -19,7 +19,7 @@ After you solve the problems, we suggest trying again a week later to test if yo
 - StringIndex.sol
 - IsFirstBitSet.sol
 - IsNBitSet.sol
-- TryCatch.sol
+- TryCatchSimple.sol
 - TryCatchReason.sol
 - ReadStruct.sol
 - LowLevel.sol
